@@ -399,6 +399,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   aspect-ratio: 4 / 3;
 }
 
@@ -495,9 +496,10 @@ button {
 
 .video__wrapper iframe {
   position: absolute;
-  inset: 0;
+  top: -60px;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 60px);
   border: none;
 }
 
@@ -739,9 +741,11 @@ textarea {
   resize: vertical;
 }
 
-/* reCAPTCHA Enterprise badge positioning */
+/* reCAPTCHA Enterprise badge — hidden, attribution in footer */
 .grecaptcha-badge {
-  visibility: visible;
+  visibility: hidden !important;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* ============================================
@@ -794,6 +798,17 @@ textarea {
 .footer__copy {
   font-size: 0.8rem;
   color: var(--c-text-muted);
+}
+
+.footer__recaptcha {
+  font-size: 0.7rem;
+  color: var(--c-text-muted);
+  margin-top: 0.5rem;
+}
+
+.footer__recaptcha a {
+  color: var(--c-text-muted);
+  text-decoration: underline;
 }
 
 /* ============================================
