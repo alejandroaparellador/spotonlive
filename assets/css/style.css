@@ -586,10 +586,10 @@ button {
 }
 
 .instagram__row .instagram-media {
-  flex: 0 0 400px !important;
-  min-width: 400px !important;
+  flex: 0 0 85vw !important;
+  min-width: 280px !important;
   max-width: 400px !important;
-  width: 400px !important;
+  width: 85vw !important;
   margin: 0 !important;
   border-radius: var(--radius) !important;
   overflow: hidden;
@@ -598,7 +598,6 @@ button {
 }
 
 .instagram__row iframe {
-  width: 400px !important;
   max-width: 400px !important;
   margin: 0 !important;
   border-radius: var(--radius) !important;
