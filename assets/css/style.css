@@ -210,15 +210,21 @@ button {
 .nav__menu {
   list-style: none;
   position: fixed;
-  inset: 0;
-  background: rgba(10, 10, 10, 0.97);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 100;
+  background: #0a0a0a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+  padding: 5rem 1.5rem 2rem;
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -838,6 +844,10 @@ textarea {
   .nav__menu {
     position: static;
     flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 0;
+    overflow: visible;
     background: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
