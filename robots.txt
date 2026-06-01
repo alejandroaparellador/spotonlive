@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alejandroaparellador.github.io/spoton1/sitemap.xml
